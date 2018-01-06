@@ -40,7 +40,7 @@ def finalize(doc):
     doc.metadata['header-includes'].append(MetaInlines(RawInline('\\let\\oldaddcontentsline\\addcontentsline', 'tex')))
     
 def main(doc = None):
-    run_filter(header, prepare = prepare, doc = doc, finalize = finalize)
+    return run_filter(header, prepare = prepare, doc = doc, finalize = finalize)
 
 if __name__ == '__main__':
     main()
