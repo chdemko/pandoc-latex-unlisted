@@ -87,3 +87,66 @@ Header {#header .myclass1 .myclass2}
         'latex'
     )
 
+def test_header_includes1():
+    verify_conversion(
+        '''
+---
+header-includes: \\usepackage{fancyhdr}
+---
+Header {.unlisted}
+======
+        ''',
+        '''
+---
+header-includes:
+- '\\usepackage{fancyhdr}'
+- '\\let\\oldaddcontentsline\\addcontentsline'
+---
+
+\\usepackage{fancyhdr}
+
+\\let\\oldaddcontentsline\\addcontentsline
+
+\\renewcommand{\\addcontentsline}[3]{}
+Header {#header .unlisted}
+======
+
+\\renewcommand{\\addcontentsline}[3]{\\oldaddcontentsline{#1}{#2}{#3}}
+        ''',
+        'latex'
+    )
+
+def test_header_includes2():
+    verify_conversion(
+        '''
+---
+header-includes: |
+    \\usepackage{fancyhdr}
+    \\pagestyle{fancy}
+---
+Header {.unlisted}
+======
+        ''',
+        '''
+---
+header-includes:
+- |
+    \\usepackage{fancyhdr}
+    \\pagestyle{fancy}
+- '\\let\\oldaddcontentsline\\addcontentsline'
+---
+
+\\usepackage{fancyhdr}
+\\pagestyle{fancy}
+
+\\let\\oldaddcontentsline\\addcontentsline
+
+\\renewcommand{\\addcontentsline}[3]{}
+Header {#header .unlisted}
+======
+
+\\renewcommand{\\addcontentsline}[3]{\\oldaddcontentsline{#1}{#2}{#3}}
+        ''',
+        'latex'
+    )
+
