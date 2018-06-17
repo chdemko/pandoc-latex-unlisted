@@ -5,7 +5,6 @@
 [![PyPI version](https://img.shields.io/pypi/v/pandoc-latex-unlisted.svg)](https://pypi.org/project/pandoc-latex-unlisted/)
 [![PyPI format](https://img.shields.io/pypi/format/pandoc-latex-unlisted.svg)](https://pypi.org/project/pandoc-latex-unlisted/)
 [![License](https://img.shields.io/pypi/l/pandoc-latex-unlisted.svg)](https://raw.githubusercontent.com/chdemko/pandoc-latex-unlisted/master/LICENSE)
-[![Downloads](https://img.shields.io/pypi/dm/pandoc-latex-unlisted.svg)](https://pypi.org/project/pandoc-latex-unlisted/)
 [![Python version](https://img.shields.io/pypi/pyversions/pandoc-latex-unlisted.svg)](https://pypi.org/project/pandoc-latex-unlisted/)
 [![Development Status](https://img.shields.io/pypi/status/pandoc-latex-unlisted.svg)](https://pypi.org/project/pandoc-latex-unlisted/)
 
