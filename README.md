@@ -1,7 +1,6 @@
 This filter is now **deprecated** as it is now in the core of pandoc.
 
 # pandoc-latex-unlisted
-[![Build Status](https://img.shields.io/travis/chdemko/pandoc-latex-unlisted/master.svg)](https://travis-ci.org/chdemko/pandoc-latex-unlisted/branches)
 [![Coveralls](https://img.shields.io/coveralls/github/chdemko/pandoc-latex-unlisted/master.svg)](https://coveralls.io/github/chdemko/pandoc-latex-unlisted?branch=master)
 [![Scrutinizer](https://img.shields.io/scrutinizer/g/chdemko/pandoc-latex-unlisted.svg)](https://scrutinizer-ci.com/g/chdemko/pandoc-latex-unlisted/)
 [![PyPI version](https://img.shields.io/pypi/v/pandoc-latex-unlisted.svg)](https://pypi.org/project/pandoc-latex-unlisted/)
