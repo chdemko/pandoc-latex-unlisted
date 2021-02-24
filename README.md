@@ -1,3 +1,5 @@
+This filter is now **deprecated** as it is now in the core of pandoc.
+
 # pandoc-latex-unlisted
 [![Build Status](https://img.shields.io/travis/chdemko/pandoc-latex-unlisted/master.svg)](https://travis-ci.org/chdemko/pandoc-latex-unlisted/branches)
 [![Coveralls](https://img.shields.io/coveralls/github/chdemko/pandoc-latex-unlisted/master.svg)](https://coveralls.io/github/chdemko/pandoc-latex-unlisted?branch=master)
